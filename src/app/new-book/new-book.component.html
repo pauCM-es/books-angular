@@ -1,1 +1,16 @@
-<p>new-book works!</p>
+<p>Add a new book:</p>
+<div class="newBook-form">
+  <input type="text" placeholder="title" #title>
+  <input type="text" placeholder="series" #series>
+  <input type="text" placeholder="author" #author>
+  <input type="text" placeholder="coverUrl" #cover>
+  <button 
+  (click)="sendNewBookData({
+    title: title.value,
+    series: series.value,
+    author: author.value,
+    cover: cover.value
+  })"
+  >SAVE BOOK</button>
+</div>
+

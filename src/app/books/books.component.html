@@ -1,1 +1,11 @@
-<p>books works!</p>
+<div *ngFor="let book of list" class="book">
+  <div class="book-cover">
+    <img src="{{book.cover}}" alt="cover image">
+  </div>
+  <div class="book-content">
+    <h3 class="book-content_title">{{book.title}}</h3>
+    <h4 class="book-content_series">Series: {{book.series}}</h4>
+    <p class="book-content_author">{{book.author}}</p>
+  </div>
+
+</div>

@@ -1,0 +1,24 @@
+.book {
+  width: 150px;
+  font-family: Helvetica, sans-serif;
+
+  &-cover {
+    img {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    width: 100%;
+    
+    &_title {
+      margin: 0;
+    }
+    &_series {
+      margin: 0;
+    }
+    &_author {
+      margin: 0;
+    }
+  }
+}

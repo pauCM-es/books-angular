@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IBook } from '../interfaces/i-book';
 
 @Component({
   selector: 'app-books',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./books.component.scss']
 })
 export class BooksComponent {
-
+  @Input() list!: IBook[]
 }
