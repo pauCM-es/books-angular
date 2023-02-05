@@ -8,4 +8,5 @@ import { IBook } from '../interfaces/i-book';
 })
 export class BooksComponent {
   @Input() list!: IBook[]
+  @Input() bookIsRead?: boolean
 }

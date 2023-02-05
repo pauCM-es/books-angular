@@ -1,0 +1,19 @@
+<h2>SEARCH ANY BOOK</h2>
+
+<input type="text"  [(ngModel)]="dataTitle">
+<!-- <input type="text"  [(ngModel)]="dataAuthor")]> -->
+<button type="button" (click)="fetchBook(dataTitle)">SEARCH</button>
+
+<app-books class="cataloge" [list]="searchResults" ></app-books>
+<!-- <div *ngFor="let book of searchResults">
+  <div class="book">
+    <div class="book-cover">
+      <img src="{{ book?.volumeInfo?.imageLinks?.thumbnail}}" alt="cover image">
+    </div>
+    <div class="book-content">
+      <h3 class="book-content_title">{{book?.volumeInfo?.title}}</h3>
+      <h4 class="book-content_series">Series: {{book.series}}</h4>
+      <p class="book-content_author">{{book?.volumeInfo?.authors[0]}}</p>
+    </div>
+  </div>
+</div> -->

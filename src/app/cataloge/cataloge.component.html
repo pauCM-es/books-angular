@@ -1,2 +1,11 @@
-<app-books [list]="cataloge"></app-books>
-<app-new-book (newBook)="addNewBook($event)"></app-new-book>
+<!-- <app-new-book (newBook)="addNewBook($event)"></app-new-book> -->
+<section class="catalogue">
+  <div class="catalogue-read">
+    <h2>READ BOOKS</h2>
+    <app-books class="cataloge" [list]="cataloge" [bookIsRead]="true"></app-books>
+  </div>
+  <div class="catalogue-notRead">
+    <h2>NOT READ BOOKS</h2>
+    <app-books class="cataloge" [list]="cataloge" [bookIsRead]="false"></app-books>
+  </div>
+</section>

@@ -14,4 +14,7 @@ export class NewBookComponent {
       console.log(book)
       this.newBook.emit(book)
     }
+
+
+
 }

@@ -16,7 +16,22 @@ export class CatalogeComponent {
         title: "El imperio final",
         series: "Mistborn",
         author: 'Brandon Sanderson',
-        cover: 'https://imagessl4.casadellibro.com/a/l/t7/94/9788413143194.jpg'
+        cover: 'https://imagessl4.casadellibro.com/a/l/t7/94/9788413143194.jpg',
+        read: false
+      },
+      {
+        title: "El camino de los reyes",
+        series: "Archivo de las tormentas",
+        author: 'Brandon Sanderson',
+        cover: 'https://imagessl1.casadellibro.com/a/l/t7/41/9788413143941.jpg',
+        read: false
+      },
+      {
+        title: "Harry Potter y la Piedra Filosofal",
+        series: "Harry Potter",
+        author: 'J.K. Rowling',
+        cover: 'https://imagessl0.casadellibro.com/a/l/t7/70/9788418174070.jpg',
+        read: true
       }
     ]
   }
