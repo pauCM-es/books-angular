@@ -2,10 +2,14 @@
 <section class="catalogue">
   <div class="catalogue-read">
     <h2>READ BOOKS</h2>
-    <app-books class="cataloge" [list]="cataloge" [bookIsRead]="true"></app-books>
+    <app-books class="cataloge" [list]="collection" [bookIsRead]="true" [button]="['not-read', 'drop']" (bookAction)="bookAction($event)"></app-books>
   </div>
   <div class="catalogue-notRead">
     <h2>NOT READ BOOKS</h2>
-    <app-books class="cataloge" [list]="cataloge" [bookIsRead]="false"></app-books>
+    <app-books class="cataloge" [list]="collection" [bookIsRead]="false" [button]="['read', 'drop']" (bookAction)="bookAction($event)"></app-books>
+  </div>
+  <div class="bestsellers">
+    <h2>BESTSELLERS</h2>
+    <app-books class="cataloge" [list]="collection" [bookIsRead]="false" [button]="['add']" (bookAction)="bookAction($event)"></app-books>
   </div>
 </section>
